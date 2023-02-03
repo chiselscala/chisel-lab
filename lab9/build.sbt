@@ -8,10 +8,8 @@ scalacOptions ++= Seq(
   "-language:reflectiveCalls",
 )
 
-resolvers ++= Seq(
-  Resolver.sonatypeRepo("snapshots"),
-  Resolver.sonatypeRepo("releases")
-)
+resolvers ++= Resolver.sonatypeOssRepos("snapshots")
+resolvers ++= Resolver.sonatypeOssRepos("releases")
 
 libraryDependencies += "org.scala-lang.modules" %% "scala-swing" % "2.1.1"
 

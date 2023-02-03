@@ -1,0 +1,6 @@
+.metals/
+*.v
+*.json
+*.fir
+*/target/
+*/project/
